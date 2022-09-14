@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Extern">
+      <UniqueIdentifier>{fb020537-16ea-4718-81e3-e5ff9a2f3c50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BananaEditor">
+      <UniqueIdentifier>{2436e0e2-644f-45b0-9f98-d5c81b2221a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Extern">
+      <UniqueIdentifier>{ea58b58d-bcb3-4bef-b5e7-de2b822c2260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BananaEditor">
+      <UniqueIdentifier>{6bcdcebb-70c6-4ee6-8085-17bc811fd49d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImguiStuff\imgui-master\imconfig.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\imgui-master\imgui.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\imgui-master\imgui_impl_glfw.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\imgui-master\imgui_impl_vulkan.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\imgui-master\imgui_internal.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\imgui-master\imstb_rectpack.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\imgui-master\imstb_textedit.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\imgui-master\imstb_truetype.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\ImGuizmo-master\ImCurveEdit.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\ImGuizmo-master\ImGradient.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\ImGuizmo-master\ImGuizmo.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\ImGuizmo-master\ImSequencer.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiStuff\ImGuizmo-master\ImZoomSlider.h">
+      <Filter>Header Files\Extern</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\BananaEditor.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\Console_Window\Console_Window.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\EditorSystem\EditorSystem.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\Hierarchy_Window\Hierarchy_Window.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\ImGuiWindow\ImGuiWindow.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\Inspector_Window\Inspector_Window.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\Menu_Window\Menu_Window.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\Tool_Bar\Tool_Bar.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\EntityCommand\EntityCommand.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\UndoSystem\UndoSystem.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\EntityTag_Window\EntityTag_Window.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\Resources_Window\Resources_Window.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCodes\Assets_Window\Assets_Window.h">
+      <Filter>Header Files\BananaEditor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImguiStuff\imgui-master\imgui.cpp">
+      <Filter>Source Files\Extern</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_demo.cpp">
+      <Filter>Source Files\Extern</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_draw.cpp">
+      <Filter>Source Files\Extern</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_impl_glfw.cpp">
+      <Filter>Source Files\Extern</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_impl_vulkan.cpp">
+      <Filter>Source Files\Extern</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_tables.cpp">
+      <Filter>Source Files\Extern</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_widgets.cpp">
+      <Filter>Source Files\Extern</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiStuff\ImGuizmo-master\ImCurveEdit.cpp">
+      <Filter>Source Files\Extern</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiStuff\ImGuizmo-master\ImGradient.cpp">
+      <Filter>Source Files\Extern</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiStuff\ImGuizmo-master\ImGuizmo.cpp">
+      <Filter>Source Files\Extern</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiStuff\ImGuizmo-master\ImSequencer.cpp">
+      <Filter>Source Files\Extern</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\Console_Window\Console_Window.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\EditorSystem\EditorSystem.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\Hierarchy_Window\Hierarchy_Window.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\ImGuiWindow\ImGuiWindow.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\Menu_Window\Menu_Window.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\Inspector_Window\Inspector_Window.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\Tool_Bar\Tool_Bar.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\EntityCommand\EntityCommand.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\UndoSystem\UndoSystem.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\EntityTag_Window\EntityTag_Window.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\Resources_Window\Resources_Window.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCodes\Assets_Window\Assets_Window.cpp">
+      <Filter>Source Files\BananaEditor</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

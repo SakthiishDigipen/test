@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3b2e4491-90a2-423c-b611-91249fa14dc7}</ProjectGuid>
+    <RootNamespace>BananaEditor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\StaticLibs\</OutDir>
+    <IntDir>$(SolutionDir)\.tmp\$(Configuration)-$(Platform)\BananaEditor\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)-$(Platform)</TargetName>
+    <IncludePath>$(SolutionDir)BananaEditor\EditorCodes;$(SolutionDir)BananaEngine\EngineCodes;$(SolutionDir)Extern\glfw\include;$(SolutionDir)Extern\glm;$(SolutionDir)Extern\Vulkan\Include;$(SolutionDir)Extern\rapidjson;$(SolutionDir)Extern\rttr;$(SolutionDir)Extern\Fmod\inc;$(SolutionDir)BananaEditor\ImguiStuff\imgui-master;$(SolutionDir)BananaEditor\ImguiStuff\ImGuizmo-master;$(SolutionDir)BananaEngine\EngineCodes\Precompiled;$(SolutionDir)Extern\stb-master;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)StaticLibs;$(SolutionDir)Extern\glfw\lib;$(SolutionDir)Extern\Vulkan\Lib;$(SolutionDir)Extern\Fmod\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\StaticLibs\</OutDir>
+    <IntDir>$(SolutionDir)\.tmp\$(Configuration)-$(Platform)\BananaEditor\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)-$(Platform)</TargetName>
+    <IncludePath>$(SolutionDir)BananaEditor\EditorCodes;$(SolutionDir)BananaEngine\EngineCodes;$(SolutionDir)Extern\glfw\include;$(SolutionDir)Extern\glm;$(SolutionDir)Extern\Vulkan\Include;$(SolutionDir)Extern\rapidjson;$(SolutionDir)Extern\rttr;$(SolutionDir)Extern\Fmod\inc;$(SolutionDir)BananaEditor\ImguiStuff\imgui-master;$(SolutionDir)BananaEditor\ImguiStuff\ImGuizmo-master;$(SolutionDir)BananaEngine\EngineCodes\Precompiled;$(SolutionDir)Extern\stb-master;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)StaticLibs;$(SolutionDir)Extern\glfw\lib;$(SolutionDir)Extern\Vulkan\Lib;$(SolutionDir)Extern\Fmod\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BananaEngine\BananaEngine.vcxproj">
+      <Project>{5a89bed3-3c0a-47a1-a2cb-fe125d848123}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EditorCodes\Assets_Window\Assets_Window.h" />
+    <ClInclude Include="EditorCodes\BananaEditor.h" />
+    <ClInclude Include="EditorCodes\Console_Window\Console_Window.h" />
+    <ClInclude Include="EditorCodes\EditorSystem\EditorSystem.h" />
+    <ClInclude Include="EditorCodes\EntityCommand\EntityCommand.h" />
+    <ClInclude Include="EditorCodes\EntityTag_Window\EntityTag_Window.h" />
+    <ClInclude Include="EditorCodes\Hierarchy_Window\Hierarchy_Window.h" />
+    <ClInclude Include="EditorCodes\ImGuiWindow\ImGuiWindow.h" />
+    <ClInclude Include="EditorCodes\Inspector_Window\Inspector_Window.h" />
+    <ClInclude Include="EditorCodes\Menu_Window\Menu_Window.h" />
+    <ClInclude Include="EditorCodes\Resources_Window\Resources_Window.h" />
+    <ClInclude Include="EditorCodes\Tool_Bar\Tool_Bar.h" />
+    <ClInclude Include="EditorCodes\UndoSystem\UndoSystem.h" />
+    <ClInclude Include="ImguiStuff\imgui-master\imconfig.h" />
+    <ClInclude Include="ImguiStuff\imgui-master\imgui.h" />
+    <ClInclude Include="ImguiStuff\imgui-master\imgui_impl_glfw.h" />
+    <ClInclude Include="ImguiStuff\imgui-master\imgui_impl_vulkan.h" />
+    <ClInclude Include="ImguiStuff\imgui-master\imgui_internal.h" />
+    <ClInclude Include="ImguiStuff\imgui-master\imstb_rectpack.h" />
+    <ClInclude Include="ImguiStuff\imgui-master\imstb_textedit.h" />
+    <ClInclude Include="ImguiStuff\imgui-master\imstb_truetype.h" />
+    <ClInclude Include="ImguiStuff\ImGuizmo-master\ImCurveEdit.h" />
+    <ClInclude Include="ImguiStuff\ImGuizmo-master\ImGradient.h" />
+    <ClInclude Include="ImguiStuff\ImGuizmo-master\ImGuizmo.h" />
+    <ClInclude Include="ImguiStuff\ImGuizmo-master\ImSequencer.h" />
+    <ClInclude Include="ImguiStuff\ImGuizmo-master\ImZoomSlider.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EditorCodes\Assets_Window\Assets_Window.cpp" />
+    <ClCompile Include="EditorCodes\Console_Window\Console_Window.cpp" />
+    <ClCompile Include="EditorCodes\EditorSystem\EditorSystem.cpp" />
+    <ClCompile Include="EditorCodes\EntityCommand\EntityCommand.cpp" />
+    <ClCompile Include="EditorCodes\EntityTag_Window\EntityTag_Window.cpp" />
+    <ClCompile Include="EditorCodes\Hierarchy_Window\Hierarchy_Window.cpp" />
+    <ClCompile Include="EditorCodes\ImGuiWindow\ImGuiWindow.cpp" />
+    <ClCompile Include="EditorCodes\Inspector_Window\Inspector_Window.cpp" />
+    <ClCompile Include="EditorCodes\Menu_Window\Menu_Window.cpp" />
+    <ClCompile Include="EditorCodes\Resources_Window\Resources_Window.cpp" />
+    <ClCompile Include="EditorCodes\Tool_Bar\Tool_Bar.cpp" />
+    <ClCompile Include="EditorCodes\UndoSystem\UndoSystem.cpp" />
+    <ClCompile Include="ImguiStuff\imgui-master\imgui.cpp" />
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_demo.cpp" />
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_draw.cpp" />
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_impl_glfw.cpp" />
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_impl_vulkan.cpp" />
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_tables.cpp" />
+    <ClCompile Include="ImguiStuff\imgui-master\imgui_widgets.cpp" />
+    <ClCompile Include="ImguiStuff\ImGuizmo-master\ImCurveEdit.cpp" />
+    <ClCompile Include="ImguiStuff\ImGuizmo-master\ImGradient.cpp" />
+    <ClCompile Include="ImguiStuff\ImGuizmo-master\ImGuizmo.cpp" />
+    <ClCompile Include="ImguiStuff\ImGuizmo-master\ImSequencer.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

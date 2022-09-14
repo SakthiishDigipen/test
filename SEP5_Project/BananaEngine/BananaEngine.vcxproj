@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EngineCodes\AssetManager\AssetManager.cpp" />
+    <ClCompile Include="EngineCodes\AssetManager\AssetTypes\AudioClip.cpp" />
+    <ClCompile Include="EngineCodes\Components\AudioSource.cpp" />
+    <ClCompile Include="EngineCodes\Components\RenderObject.cpp" />
+    <ClCompile Include="EngineCodes\Debugger\Debugger.cpp" />
+    <ClCompile Include="EngineCodes\Engine\GameEngine.cpp" />
+    <ClCompile Include="EngineCodes\Serialisation\BananaSerialisation.cpp" />
+    <ClCompile Include="EngineCodes\Systems\ECS\ECS.cpp" />
+    <ClCompile Include="EngineCodes\Components\EntityInfo.cpp" />
+    <ClCompile Include="EngineCodes\Components\Transform.cpp" />
+    <ClCompile Include="EngineCodes\Systems\ECS\ECSComponent\ECSComponentMgr.cpp" />
+    <ClCompile Include="EngineCodes\Systems\ECS\ECSTracker\ECSTracker.cpp" />
+    <ClCompile Include="EngineCodes\Systems\ECS\ECSTracker\ECSTrackerMgr.cpp" />
+    <ClCompile Include="EngineCodes\Systems\GLFWSystem\GLFWSystem.cpp" />
+    <ClCompile Include="EngineCodes\Systems\Graphics\Camera.cpp" />
+    <ClCompile Include="EngineCodes\Systems\Graphics\GraphicsSystem.cpp" />
+    <ClCompile Include="EngineCodes\Systems\Graphics\Textures.cpp" />
+    <ClCompile Include="EngineCodes\Systems\Graphics\VukInit.cpp" />
+    <ClCompile Include="EngineCodes\Systems\InputSystem\InputSystem.cpp" />
+    <ClCompile Include="EngineCodes\Utilities\BEID\BEID.cpp" />
+    <ClCompile Include="EngineCodes\Precompiled\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="EngineCodes\Systems\ECS\ECSEntity\ECSEntityMgr.cpp" />
+    <ClCompile Include="EngineCodes\Utilities\Random\Random.cpp" />
+    <ClCompile Include="EngineCodes\Utilities\Utility.cpp" />
+    <ClCompile Include="EngineCodes\EventDispatcher\EventDispatcher.cpp" />
+    <ClCompile Include="EngineCodes\Systems\SceneManager\Scene.cpp" />
+    <ClCompile Include="EngineCodes\Systems\SceneManager\SceneManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EngineCodes\AssetManager\AssetData.h" />
+    <ClInclude Include="EngineCodes\AssetManager\AssetData.hpp" />
+    <ClInclude Include="EngineCodes\AssetManager\AssetManager.h" />
+    <ClInclude Include="EngineCodes\AssetManager\AssetManager.hpp" />
+    <ClInclude Include="EngineCodes\AssetManager\AssetTypes\AudioClip.h" />
+    <ClInclude Include="EngineCodes\AssetManager\AssetTypes\TestFile.h" />
+    <ClInclude Include="EngineCodes\Components\AudioListener.h" />
+    <ClInclude Include="EngineCodes\Components\AudioSource.h" />
+    <ClInclude Include="EngineCodes\AssetTypes\AudioClip.h" />
+    <ClInclude Include="EngineCodes\AssetTypes\TestFile.h" />
+    <ClInclude Include="EngineCodes\Components\RenderObject.h" />
+    <ClInclude Include="EngineCodes\Debugger\Debugger.h" />
+    <ClInclude Include="EngineCodes\Debugger\Debugger.hpp" />
+    <ClInclude Include="EngineCodes\Engine\GameEngine.h" />
+    <ClInclude Include="EngineCodes\Engine\GameEngine.hpp" />
+    <ClInclude Include="EngineCodes\Serialisation\BananaSerialisation.h" />
+    <ClInclude Include="EngineCodes\EventDispatcher\EventDispatcher.hpp" />
+    <ClInclude Include="EngineCodes\EventDispatcher\Events.h" />
+    <ClInclude Include="EngineCodes\Events\Events.h" />
+    <ClInclude Include="EngineCodes\Systems\AllSystems.h" />
+    <ClInclude Include="EngineCodes\Systems\AssetManager\AssetData.h" />
+    <ClInclude Include="EngineCodes\Systems\AssetManager\AssetData.hpp" />
+    <ClInclude Include="EngineCodes\Systems\AssetManager\AssetManager.h" />
+    <ClInclude Include="EngineCodes\Systems\AssetManager\AssetManager.hpp" />
+    <ClInclude Include="EngineCodes\Systems\ECS\ECS.h" />
+    <ClInclude Include="EngineCodes\Systems\ECS\ECS.hpp" />
+    <ClInclude Include="EngineCodes\Components\EntityInfo.h" />
+    <ClInclude Include="EngineCodes\Components\Transform.h" />
+    <ClInclude Include="EngineCodes\Components\ECSComponent.h" />
+    <ClInclude Include="EngineCodes\Systems\ECS\ECSComponent\ECSComponentArray.h" />
+    <ClInclude Include="EngineCodes\Systems\ECS\ECSComponent\ECSComponentArray.hpp" />
+    <ClInclude Include="EngineCodes\Systems\ECS\ECSComponent\ECSComponentMgr.h" />
+    <ClInclude Include="EngineCodes\Systems\ECS\ECSComponent\ECSComponentMgr.hpp" />
+    <ClInclude Include="EngineCodes\Systems\ECS\ECSConfig.h" />
+    <ClInclude Include="EngineCodes\Systems\ECS\ECSTracker\ECSTracker.h" />
+    <ClInclude Include="EngineCodes\Systems\ECS\ECSTracker\ECSTrackerMgr.h" />
+    <ClInclude Include="EngineCodes\Systems\ECS\ECSTracker\ECSTrackerMgr.hpp" />
+    <ClInclude Include="EngineCodes\Systems\GLFWSystem\GLFWSystem.h" />
+    <ClInclude Include="EngineCodes\Systems\Graphics\Camera.h" />
+    <ClInclude Include="EngineCodes\Systems\Graphics\GraphicsSystem.h" />
+    <ClInclude Include="EngineCodes\Systems\Graphics\Textures.h" />
+    <ClInclude Include="EngineCodes\Systems\Graphics\VukInit.h" />
+    <ClInclude Include="EngineCodes\Systems\InputSystem\InputSystem.h" />
+    <ClInclude Include="EngineCodes\Systems\ISystem.h" />
+    <ClInclude Include="EngineCodes\Utilities\Singleton\Singleton.h" />
+    <ClInclude Include="EngineCodes\Utilities\Singleton\Singleton.hpp" />
+    <ClInclude Include="EngineCodes\Systems\ECS\ECSEntity\ECSEntityMgr.h" />
+    <ClInclude Include="EngineCodes\Maths\MathLib.h" />
+    <ClInclude Include="EngineCodes\Maths\MathLib.hpp" />
+    <ClInclude Include="EngineCodes\Maths\Matrix3D.h" />
+    <ClInclude Include="EngineCodes\Maths\Matrix3D.hpp" />
+    <ClInclude Include="EngineCodes\Maths\Quaternion.h" />
+    <ClInclude Include="EngineCodes\Maths\Quaternion.hpp" />
+    <ClInclude Include="EngineCodes\Utilities\Random\Random.h" />
+    <ClInclude Include="EngineCodes\Utilities\Random\Random.hpp" />
+    <ClInclude Include="EngineCodes\Utilities\Utility.h" />
+    <ClInclude Include="EngineCodes\Maths\Vector3D.h" />
+    <ClInclude Include="EngineCodes\Maths\Vector3D.hpp" />
+    <ClInclude Include="EngineCodes\BananaEngine.h" />
+    <ClInclude Include="EngineCodes\Precompiled\pch.h" />
+    <ClInclude Include="EngineCodes\Utilities\BEID\BEID.h" />
+    <ClInclude Include="EngineCodes\EventDispatcher\EventDispatcher.h" />
+    <ClInclude Include="EngineCodes\Systems\SceneManager\Scene.h" />
+    <ClInclude Include="EngineCodes\Systems\SceneManager\SceneManager.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5a89bed3-3c0a-47a1-a2cb-fe125d848123}</ProjectGuid>
+    <RootNamespace>BananaEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\StaticLibs\</OutDir>
+    <IntDir>$(SolutionDir)\.tmp\$(Configuration)-$(Platform)\BananaEngine\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)-$(Platform)</TargetName>
+    <IncludePath>$(SolutionDir)Extern\glfw\include;$(SolutionDir)Extern\glm;$(SolutionDir)Extern\rapidjson;$(SolutionDir)Extern\rttr;$(SolutionDir)Extern\Vulkan\Include;$(SolutionDir)Extern\Fmod\inc;$(SolutionDir)BananaEngine\EngineCodes;$(IncludePath);$(SolutionDir)BananaEngine\EngineCodes\Precompiled;$(SolutionDir)Extern\stb-master</IncludePath>
+    <LibraryPath>$(SolutionDir)Extern\glfw\lib;$(SolutionDir)Extern\Vulkan\Lib;$(SolutionDir)Extern\Fmod\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\StaticLibs\</OutDir>
+    <IntDir>$(SolutionDir)\.tmp\$(Configuration)-$(Platform)\BananaEngine\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)-$(Platform)</TargetName>
+    <IncludePath>$(SolutionDir)Extern\glfw\include;$(SolutionDir)Extern\glm;$(SolutionDir)Extern\rapidjson;$(SolutionDir)Extern\rttr;$(SolutionDir)Extern\Vulkan\Include;$(SolutionDir)Extern\rapidjson;$(SolutionDir)Extern\Fmod\inc;$(SolutionDir)BananaEngine\EngineCodes;$(IncludePath);$(SolutionDir)BananaEngine\EngineCodes\Precompiled;$(SolutionDir)Extern\stb-master</IncludePath>
+    <LibraryPath>$(SolutionDir)Extern\glfw\lib;$(SolutionDir)Extern\Vulkan\Lib;$(SolutionDir)Extern\Fmod\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/Zm1000 /bigobj</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/Zm1000 /bigobj</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

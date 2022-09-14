@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0a0f10d7-905b-4b75-a153-b1665886a206}</ProjectGuid>
+    <RootNamespace>BananaGame</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\</OutDir>
+    <IntDir>$(SolutionDir)\.tmp\$(Configuration)-$(Platform)\Game\</IntDir>
+    <TargetName>$(ProjectName)-$(Configuration)-$(Platform)</TargetName>
+    <IncludePath>$(SolutionDir)BananaEngine\EngineCodes;$(SolutionDir)BananaEditor\EditorCodes;$(SolutionDir)Extern\glfw\include;$(SolutionDir)Extern\glm;$(SolutionDir)Extern\Vulkan\Include;$(SolutionDir)Extern\rapidjson;$(SolutionDir)Extern\rttr;$(SolutionDir)Extern\fmod\inc;$(SolutionDir)BananaEngine\EngineCodes\Precompiled;$(SolutionDir)Extern\stb-master;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)StaticLibs;$(SolutionDir)Extern\glfw\lib;$(SolutionDir)Extern\Vulkan\Lib;$(SolutionDir)Extern\rttr\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\</OutDir>
+    <IntDir>$(SolutionDir)\.tmp\$(Configuration)-$(Platform)\Game\</IntDir>
+    <TargetName>$(ProjectName)-$(Configuration)-$(Platform)</TargetName>
+    <IncludePath>$(SolutionDir)BananaEngine\EngineCodes;$(SolutionDir)BananaEditor\EditorCodes;$(SolutionDir)Extern\glfw\include;$(SolutionDir)Extern\glm;$(SolutionDir)Extern\Vulkan\Include;$(SolutionDir)Extern\rapidjson;$(SolutionDir)Extern\rttr;$(SolutionDir)Extern\fmod\inc;$(SolutionDir)BananaEngine\EngineCodes\Precompiled;$(SolutionDir)Extern\stb-master;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)StaticLibs;$(SolutionDir)Extern\glfw\lib;$(SolutionDir)Extern\Vulkan\Lib;$(SolutionDir)Extern\rttr\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>BananaEngine_$(Configuration)-$(Platform).lib;BananaEditor_$(Configuration)-$(Platform).lib;glfw3dll.lib;vulkan-1.lib;rttr_core_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)Extern\glfw\lib\glfw3.dll" "$(TargetDir)glfw3.dll" /Y
+copy "$(SolutionDir)Extern\rttr\rttr_core_d.dll" "$(TargetDir)rttr_core_d.dll" /Y
+copy "$(SolutionDir)Extern\Fmod\lib\fmodL.dll" "$(TargetDir)fmodL.dll" /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>BananaEngine_$(Configuration)-$(Platform).lib;BananaEditor_$(Configuration)-$(Platform).lib;glfw3dll.lib;vulkan-1.lib;rttr_core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)Extern\glfw\lib\glfw3.dll" "$(TargetDir)glfw3.dll" /Y
+copy "$(SolutionDir)Extern\rttr\rttr_core.dll" "$(TargetDir)rttr_core.dll" /Y 
+copy "$(SolutionDir)Extern\Fmod\lib\fmod.dll" "$(TargetDir)fmod.dll" /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GameCodes\Application\Application.cpp" />
+    <ClCompile Include="GameCodes\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BananaEditor\BananaEditor.vcxproj">
+      <Project>{3b2e4491-90a2-423c-b611-91249fa14dc7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BananaEngine\BananaEngine.vcxproj">
+      <Project>{5a89bed3-3c0a-47a1-a2cb-fe125d848123}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameCodes\Application\Application.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
