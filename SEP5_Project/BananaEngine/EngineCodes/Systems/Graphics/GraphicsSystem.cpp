@@ -1118,7 +1118,7 @@ namespace BE
 
 		vkCmdBeginRenderPass(cmd, &rpInfo, VK_SUBPASS_CONTENTS_INLINE);
 
-		draw_objects(cmd, _renderables.data(), _renderables.size());
+		//draw_objects(cmd, _renderables.data(), _renderables.size());
 
 		//finalize the render pass
 		vkCmdEndRenderPass(cmd);

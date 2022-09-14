@@ -219,6 +219,9 @@
     <ClCompile Include="EngineCodes\Systems\Graphics\Camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="EngineCodes\Systems\Graphics\VkBootstrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EngineCodes\BananaEngine.h">
@@ -419,8 +422,5 @@
     <ClInclude Include="EngineCodes\Systems\Graphics\Camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

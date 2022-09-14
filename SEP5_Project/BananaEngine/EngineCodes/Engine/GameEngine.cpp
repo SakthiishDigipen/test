@@ -31,7 +31,7 @@ namespace BE
 		this->CreateSystem<GLFWSystem>();
 		this->CreateSystem<ECSCoordinator>();
 		this->CreateSystem<SceneManager>();
-		//this->CreateSystem<VulkanSystem>();
+		this->CreateSystem<VulkanSystem>();
 	}
 
 	GameEngine::~GameEngine()

@@ -92,6 +92,12 @@ namespace BE
 	class VulkanSystem : public Singleton<VulkanSystem>, public ISystem
 	{
 	public:
+		//default array of renderable objects
+		std::vector<BE::RenderObject> _renderables;
+		//TO-DO random error? 
+		std::unordered_map<std::string, Material> _materials;
+		std::unordered_map<std::string, Mesh> _meshes;
+		std::unordered_map<std::string, Texture> _loadedTextures;
 		bool _isInitialized{ false };
 		int _frameNumber{ 0 };
 		int _selectedShader{ 0 };

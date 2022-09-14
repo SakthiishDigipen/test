@@ -28,6 +28,7 @@
     <ClCompile Include="EngineCodes\Systems\Graphics\Camera.cpp" />
     <ClCompile Include="EngineCodes\Systems\Graphics\GraphicsSystem.cpp" />
     <ClCompile Include="EngineCodes\Systems\Graphics\Textures.cpp" />
+    <ClCompile Include="EngineCodes\Systems\Graphics\VkBootstrap.cpp" />
     <ClCompile Include="EngineCodes\Systems\Graphics\VukInit.cpp" />
     <ClCompile Include="EngineCodes\Systems\InputSystem\InputSystem.cpp" />
     <ClCompile Include="EngineCodes\Utilities\BEID\BEID.cpp" />

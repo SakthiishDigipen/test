@@ -69,12 +69,7 @@ namespace BE
 
     };
 
-    //default array of renderable objects
-    std::vector<BE::RenderObject> _renderables;
-    //TO-DO random error? 
-    std::unordered_map<std::string, Material> _materials;
-    std::unordered_map<std::string, Mesh> _meshes;
-    std::unordered_map<std::string, Texture> _loadedTextures;
+    
 }
 
 

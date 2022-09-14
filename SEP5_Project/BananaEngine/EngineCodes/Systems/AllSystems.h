@@ -7,6 +7,6 @@
 #include "ECS/ECS.h"
 #include "SceneManager/SceneManager.h"
 #include "GLFWSystem/GLFWSystem.h"
-//#include "Graphics/GraphicsSystem.h"
+#include "Graphics/GraphicsSystem.h"
 
 #endif

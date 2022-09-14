@@ -1,3 +1,4 @@
+#define VMA_IMPLEMENTATION
 #include <BananaEngine.h>
 #include <BananaEditor.h>
 #include "Application/Application.h"
@@ -27,7 +28,7 @@ int main()
 #define GLFW_INCLUDE_NONE
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
-#include <vulkan/vulkan.h>
+//#include <vulkan/vulkan.h>
 
 //#define IMGUI_UNLIMITED_FRAME_RATE
 #ifdef _DEBUG
